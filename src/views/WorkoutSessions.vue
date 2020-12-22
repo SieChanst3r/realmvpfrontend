@@ -4,9 +4,10 @@
     <nav-bar />
     </div>
     <div id="body-container">
-      <home-page />
+        <workout-sessions />
 
     </div>
+    
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <div><footer-comp />
@@ -19,7 +20,7 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 import FooterComp from "../components/Footer.vue";
 import navBar from "../components/NavBar.vue";
-import HomePage from "../components/HomeCard.vue";
+import WorkoutSessions from "../components/WorkoutSessions.vue";
 
 export default {
   name: "Home",
@@ -27,7 +28,7 @@ export default {
     // HelloWorld
     FooterComp,
     navBar,
-    HomePage,
+    WorkoutSessions,
   }
 };
 </script>
@@ -38,5 +39,7 @@ export default {
   align-items: center;
   justify-items: center;
   min-height: 80vh;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
 }
 </style>

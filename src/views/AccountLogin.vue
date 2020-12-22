@@ -6,8 +6,8 @@
     <nav-bar />
   </div>
   <div id="body-container">
-    <h1>We had to start somewhere! </h1>
-    <about-page />
+    <h1>This is the users account with login form page</h1>
+    <login-form />
   </div>
   <div id="footer">
     <footer-comp />
@@ -18,14 +18,16 @@
 <script>
 import FooterComp from "../components/Footer.vue";
 import navBar from "../components/NavBar.vue";
-import AboutPage from "../components/AboutUs.vue";
+import LoginForm from "../components/LoginForm.vue";
+// import axios from "axios";
+// import cookies from "vue-cookies";
 
   export default {
-    name: "about",
+    name: "account",
     components: {
     FooterComp,
     navBar,
-    AboutPage,
+    LoginForm,
   }
   }
 </script>
